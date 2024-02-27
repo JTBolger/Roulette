@@ -1,0 +1,45 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#main {
+    width: 100vw;
+    height: 100vh; 
+    background-color: #232323;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    overflow: hidden;
+}
+
+#button {
+    display: flex;
+    justify-content: center;
+    margin-top: 10vw;
+}
+
+.button-base {
+    width: 35%;
+    padding-bottom: 30%;
+    border-radius: 50%;
+    background-color: rgb(104, 104, 104);
+    border-bottom: solid 1vw #555555;
+    position: absolute;
+    z-index: 1;
+}
+
+#button-face {
+    width: 30%;
+    padding-bottom: 25%;
+    border-radius: 50%;
+    background-color: #ff3838;
+    z-index: 2;
+    border-bottom: solid 3vw #b90000;
+    position: absolute;
+}
+#button-face.mouseDown {
+    transition: 0.2s;
+    transform: translateY(1vw);
+    border-bottom: solid 2vw #b90000;
+}
