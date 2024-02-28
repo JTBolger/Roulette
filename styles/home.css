@@ -1,7 +1,6 @@
 * {
     padding: 0;
     margin: 0;
-    font: ;
 }
 
 #main {
@@ -17,7 +16,7 @@
 #button {
     display: flex;
     justify-content: center;
-    margin-top: 10vw;
+    margin-top: 8vw;
 }
 
 .button-base {
@@ -53,4 +52,12 @@
     transition: 0.2s;
     transform: translateY(1vw);
     border-bottom: solid 2vw #b90000;
+}
+
+#high-score {
+    position: absolute;
+    color: #3a3a3a;
+    bottom: 3vh;
+    font-size: 5vw;
+    user-select: none;
 }
