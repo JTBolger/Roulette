@@ -19,9 +19,10 @@ function mouseUpHandler() {
     console.log("score : ", score, "\nrandNum : ", randNum);
     if (randNum < score) {
         score = 1;
+        console.error("RESET")
     }
     else {
-        score += 1;
+        score++;
     }
     if (score > highScore) {
         highScore = score;
@@ -36,3 +37,10 @@ function mouseLeaveHandler() {
     buttonFace.removeEventListener('mouseleave', mouseLeaveHandler);
 }
 
+var int = 1;
+var total = 1;
+for (var i=0; i<100; i++) {
+    total *= int;
+    int -= 0.01;
+}
+console.warn("If you were wondering, the chances of beating this game are %"+(total*10));
